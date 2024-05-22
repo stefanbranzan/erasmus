@@ -1,0 +1,9 @@
+if(!document.querySelector('script[src*="sp-micro.umd.js"]')){
+  throw('Sales Pop Duplicate Script Found')
+}
+
+const script = document.createElement('script')
+script.id = 'ck-sp-embed-script'
+script.setAttribute('src',`https://sp-micro-next.b-cdn.net/sp-micro.umd.js`);
+script.async = true
+document.head.appendChild(script)
